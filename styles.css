@@ -150,14 +150,15 @@
 }
 
 .slider img {
+  width: 100%;
   flex: 1 0 100%;
   scroll-snap-align: start;
-  object-fit: scale-down;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
   .slider {
-    border-radius: 0px;
+    border-radius: 10px;
   }
   .site-content-header {
     font-size: 2rem;
