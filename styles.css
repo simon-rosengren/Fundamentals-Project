@@ -113,11 +113,38 @@
   margin: auto;
   width: 12rem;
   height: 12rem;
+  transition: scale 1s;
 }
 
 .music-grid-item img {
+  position: relative;
   height: 10rem;
   width: 11rem;
+}
+
+.music-grid-item:hover {
+  scale: 1.15;
+}
+
+.music-grid-item:hover:after {
+  background-image: url('assets/images/play.png');
+  background-size: 11rem 10rem;
+  top: 0;
+  left: 0.5rem;
+  position: absolute;
+  display: block;
+  width: 11rem; 
+  height: 10rem;
+  content:"";
+}
+
+.music-grid-item a {
+  text-decoration: none;
+  color: rgba(55, 52, 53, 255);
+}
+
+.music-grid-item:hover a {
+  text-decoration: underline;
 }
 
 .site-content-shows {
